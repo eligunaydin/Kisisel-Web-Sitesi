@@ -113,7 +113,7 @@ section {
 /* Hakkımda */
 .Hakkımda {
     min-height: 100vh;
-    background: url(../img/img2.jpg) no-repeat;
+    background: url(../img/img.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: -11.5rem;
@@ -338,6 +338,7 @@ section {
 /* ilgi  alanlarım */
 
 .ilgi .row .image{
+    padding: 2rem;
     flex: 1 1 45rem;
 }
 
@@ -364,20 +365,34 @@ section {
 
 .ilgi .row .content p{
     font-size: 1.6rem;
-    color: #612020;
+    color: #0e0e0e;
     padding: 1rem 0;
     line-height: 1.8;
 }
 
 .form-wrapper{
-
     display: flex;
     flex-direction: column;
-    width: 100;
+    margin: 20px 17.5rem;
+    width: 100%;
 }
+
 .form{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.form-wrapper .searchInput{
+
+#searchInput{
     width: 75%;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
 }
+
+.button-wrapper{
+    margin: 10px 31%; 
+}
+
+
+/* şehrim */
