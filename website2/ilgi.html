@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>İlgi Alnalarım</title>
+  </head>
+  <link rel="stylesheet" href="style/style.css" />
+
+  <body>
+    
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="img/logo.png" alt="logo" . />
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Hakkımda</a>
+        <a href="ozgecmis.html">Özgeçmiş</a>
+        <a href="#ilgi" class="active">İlgi Alanlarım</a>
+        <a href="sehrim.html">Şehrim</a>
+        <a href="miras.html">Mirasımız</a>
+        <a href="iletisim.html">İletişim</a>
+        <a href="login.php">Login</a>
+      </nav>
+
+      <div class="buttons">
+        <button>
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <section class="ilgi">
+      <h1 class="heading">İLGİ ALANLARIM</h1>
+      <div class="row">
+        <div class="image">
+          <img src="img/ilgi.jpg" alt="ilgi" />
+        </div>
+        <div class="content">
+          <h3>Müzik</h3>
+          <p>
+            Ruhu dinlendiren ve hafifleten, hayatımızın önemli bir parçası olan müzikle 11 yaşımda tanıştım. Tesadüfen dinlediğim Türk sanat müziği gençlik korosu provasında müziğe ilgim olduğunu fark ettim.
+            Bu ilgimi fark eder etmez koroya dahil olmak istedim. Böylece
+            müzikle uzun süredir devam eden uğraşım başlamış oldu.
+          </p>
+          <p>
+            İlk olarak Türk sanat müziği gençlik korosunda yer edindim.
+            Verdiğimiz konserde müzikle iç içe bir hayat sürmek istediğimi daha
+            da iyi idrak ettim. Ortaokulumun korosunda yer aldım.
+          </p>
+          <p>
+            Liseye geçtikten sonra ise okulumuzun bando takımında ve
+            orkestrasında trompet çalmaya başladım. Bando takımıyla birlikte
+            belediyenin ya da çeşitli kuruluşların düzenlediği etkinliklerde 4
+            yıl boyunca gönüllü olarak görev aldım. Hem bando takımıyla hem de
+            türkü back vokali olarak TRT Müzik kanalına çekim gerçekleştirdim.
+            Orkestrayla ise Fizy Liselerarası Müzik Yarışmasına katıldım.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="image">
+          <img src="img/ilgi2.jpg" alt="ilgi" />
+        </div>
+        <div class="content">
+          <h3>Voleybol</h3>
+          <p>
+            Günün stres ve yorgunluğunu zihninizden uzaklaştırmak için spor doğru bir seçim olacaktır. Benim de öğrencilik hayatımın stresini atmak için kullandığım bir yoldur.
+          </p>
+          <p>
+            4 yıl lisanslı olarak voleybol oynadım. Bu süre boyunca takım içerisinde libero ve pasör pozisyonlarında bulundum. Katıldığımız okullar arası yarışmalarda bir sezonu birincilikle bitirdik.
+          </p>
+          <p>
+            Şu an aktif olarak spor yapmasam da bu sportif geçmişin vücudumun gelişimini olumlu yönde etkilediğini söyleyebilirim.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <div class="form-wrapper">
+        <form id="form">
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Bir şey ara!"/>
+
+            <div class="button-wrapper">
+                <button class="btn" id="searchButton">Görsel Ara</button>
+                <button class="btn" id="clearButton">Temizle</button>
+            </div>
+        </form>
+      </div>
+
+      <div class="imagelist-wrapper"></div>
+    </div>
+
+    <script src="api.js"></script>
+  </body>
+</html>
