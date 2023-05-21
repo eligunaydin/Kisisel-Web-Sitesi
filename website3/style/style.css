@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,400;1,500;1,600&display=swap');
+
+:root {
+    --main-color: rgb(211, 107, 107);
+    --black-color: #0e0e0e;
+    --border: 0.1rem solid rgba(255,255,255,0.4);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+/*! base html codes */ 
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: #fff;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: var(--black-color);
+}
+
+body {
+    background-color: var(--main-color);
+    height: 200vh;
+}
+
+section {
+    padding: 3.5rem 7%;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3rem;
+    border-radius: 30rem;
+    font-size: 1rem;
+    color:rgb(180, 251, 238);
+    background-color: var(--black-color);
+}
+
+.heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+
+
+/* ***header*** */
+.header .logo img {
+    height: 7rem;
+}
+
+.header {
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    margin: 0.3rem;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+/* Hakkımda */
+.Hakkımda {
+    min-height: 100vh;
+    background: url(../img/img.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -11.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.Hakkımda .content {
+    max-width: 60rem;
+}
+
+.Hakkımda .content h3 {
+    font-size: 6rem;
+    color: lightpink;
+}
+
+.Hakkımda .content p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color:rgb(180, 251, 238);
+}
+
+
+/* bilgiler */
+
+.bilgiler .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.7rem;
+}
+
+.bilgiler .box-container .box {
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between
+}
+
+.bilgiler .box-container .box img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+
+.bilgiler .box-container .box  h3 {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.bilgiler .box-container .box  p {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+
+/* özgeçmiş */
+
+.özgeçmiş .box-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    display: grid;
+    margin: 50px;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,.1);
+    padding: 0.5rem;
+    border-radius: 3rem;
+}
+
+.özgeçmiş .box-container .boxleft {
+    background-color:#9a4646;
+    padding: 40px;
+    border-radius: 3rem;
+    justify-content: space-between
+}
+
+.özgeçmiş .box-container .boxright {
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 3rem;
+    justify-content: space-between
+}
+
+.özgeçmiş .box-container .boxleft .profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.özgeçmiş .box-container .boxleft .profileText .imgBox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.özgeçmiş .box-container .boxleft .profileText .imgBox .img {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.özgeçmiş .box-container .boxleft .profileText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo{
+    padding-top: 40px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 25px;
+    font-size: 15px;
+    color: #0e0e0e;
+}
+
+.contactInfo ul li .span{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfoE {
+    font-size: 1.5rem;
+}
+
+.contactInfoE li {
+    margin-bottom: 15px;
+}
+
+.contactInfoE h5 {
+    color: aqua;
+    font-weight: 500;
+}
+
+.contactInfoE h4:nth-child(2) {
+    color:#fff;
+    font-weight: 500;
+}
+
+.özgeçmiş .box-container .boxright .title1{
+    font-size: 3rem;
+    margin-bottom: 0.1rem;
+    padding: 1rem;
+}
+
+.özgeçmiş .box-container .boxright h1{
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    color:#9a4646;
+}
+
+.özgeçmiş .box-container .boxright p{
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+.contactInfoL .perecent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background:rgb(104, 11, 32);
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfoL .perecent div{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    background: aqua;
+}
+
+.özgeçmiş .box-container .boxright h3{
+    color: #9a4646;
+}
+
+
+/* ilgi  alanlarım */
+
+.ilgi .row .image{
+    padding: 2rem;
+    flex: 1 1 45rem;
+}
+
+.ilgi .row .content{
+    flex: 1 1 45rem;
+}
+
+.ilgi .row img{
+    width: 100%;
+    border-radius: 3rem;
+
+}
+
+.ilgi .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.ilgi .row .content h3{
+    font-size: 3rem;
+    color:#612020;
+}
+
+.ilgi .row .content p{
+    font-size: 1.6rem;
+    color: #0e0e0e;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 17.5rem;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchInput{
+    width: 75%;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-wrapper{
+    margin: 10px 31%; 
+}
+
+
+/* şehrim */
+
+.sehrim .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(2fr,1fr));
+    gap: 1.7rem;
+}
+
+.sehrim .box-container .box {
+    padding: 3rem;
+    position: center;
+    width: 70rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+.sehrim .box-container .box  h3 {
+    font-size: 4rem;
+    padding: 2rem 0;
+}
+
+.sehrim .box-container .box  p {
+    font-size: 4rem;
+    padding: 2.5rem 0;
+}
+
+.sehrim .row .content{
+    flex: 1 1 45rem;
+}
+
+.sehrim .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+}
+
+.sehrim .row .content h3{
+    font-size: 2rem;
+    color:#612020;
+}
+
+.sehrim .row .content p{
+    font-size: 1.5rem;
+    color: #0e0e0e;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
